@@ -1,299 +1,167 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
-<html>
+<!DOCTYPE html>
+<html lang="en">
 <head>
-  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-  <meta http-equiv="Content-Style-Type" content="text/css">
-  <title></title>
-  <meta name="Generator" content="Cocoa HTML Writer">
-  <meta name="CocoaVersion" content="2685.3">
-  <style type="text/css">
-    p.p1 {margin: 0.0px 0.0px 10.7px 0.0px; line-height: 18.4px; font: 16.0px Helvetica; color: #000000; -webkit-text-stroke: #000000}
-    span.s1 {font-kerning: none}
-    span.s2 {font: 16.0px 'Apple Color Emoji'; font-kerning: none}
+  <meta charset="UTF-8" />
+  <title>Mariam 💖</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <style>
+    :root { --pink:#c9184a; }
+    * { box-sizing: border-box; }
+    body{
+      margin:0; min-height:100vh; padding:18px;
+      font-family: Georgia, serif;
+      background: linear-gradient(135deg,#ff9a9e,#fad0c4);
+      display:flex; align-items:center; justify-content:center;
+    }
+    .card{
+      width:100%; max-width:420px;
+      background: rgba(255,255,255,0.96);
+      border-radius:26px; padding:26px 20px;
+      box-shadow:0 18px 40px rgba(0,0,0,0.18);
+      text-align:center; position:relative;
+      animation: fadeIn 1s ease;
+    }
+    h1{ color:var(--pink); font-size:30px; margin:0 0 10px; }
+    p{ color:#555; line-height:1.65; font-size:16px; margin:10px 0; }
+    .heart{
+      width:110px; height:110px; margin:15px auto;
+      background:var(--pink); position:relative;
+      transform: rotate(-45deg);
+      animation: pulse 1.2s infinite;
+      border-radius:20px;
+    }
+    .heart::before,.heart::after{
+      content:""; width:110px; height:110px;
+      background:var(--pink); position:absolute;
+      border-radius:50%;
+    }
+    .heart::before{ top:-55px; left:0; }
+    .heart::after{ left:55px; top:0; }
+    input{
+      width:110px; padding:10px; font-size:18px;
+      border-radius:14px; border:1px solid #ffd1dc;
+      text-align:center; margin:10px 0;
+      outline:none;
+    }
+    button{
+      border:none; border-radius:999px;
+      padding:12px 18px; font-size:16px;
+      cursor:pointer; margin:6px;
+      transition:0.2s; font-family:inherit;
+    }
+    .primary{ background:var(--pink); color:#fff; }
+    .ghost{ background:#eee; color:#333; }
+    button:hover{ transform:scale(1.05); }
+    .hint{
+      display:none; background:#fff3f6;
+      border:1px dashed #ffc2d1;
+      border-radius:16px; padding:10px;
+      margin-top:10px; font-size:14px;
+    }
+    .step{ display:none; }
+    .step.active{ display:block; }
+    .storyLine{
+      background:#fff7f9; border:1px solid #ffd1dc;
+      border-radius:18px; padding:16px;
+      margin:12px 0; text-align:left;
+      opacity:0; transform:translateY(12px);
+      animation: reveal 0.9s forwards;
+    }
+    #no{ position:absolute; background:#ddd; color:#333; }
+    img{
+      width:100%; border-radius:18px;
+      box-shadow:0 12px 22px rgba(0,0,0,0.18);
+      margin-top:12px;
+    }
+    @keyframes fadeIn{ from{opacity:0; transform:translateY(10px);} to{opacity:1; transform:translateY(0);} }
+    @keyframes reveal{ to{opacity:1; transform:translateY(0);} }
+    @keyframes pulse{ 0%,100%{transform:rotate(-45deg) scale(1);} 50%{transform:rotate(-45deg) scale(1.06);} }
+    @keyframes shake{ 0%,100%{transform:translateX(0);} 25%{transform:translateX(-8px);} 50%{transform:translateX(8px);} 75%{transform:translateX(-6px);} }
   </style>
 </head>
 <body>
-<p class="p1"><span class="s1">&lt;!DOCTYPE html&gt;</span></p>
-<p class="p1"><span class="s1">&lt;html lang="en"&gt;</span></p>
-<p class="p1"><span class="s1">&lt;head&gt;</span></p>
-<p class="p1"><span class="s1">  &lt;meta charset="UTF-8" /&gt;</span></p>
-<p class="p1"><span class="s1">  &lt;title&gt;Mariam </span><span class="s2">💖</span><span class="s1">&lt;/title&gt;</span></p>
-<p class="p1"><span class="s1">  &lt;meta name="viewport" content="width=device-width, initial-scale=1.0" /&gt;</span></p>
-<p class="p1"><span class="s1"> </span></p>
-<p class="p1"><span class="s1">  &lt;style&gt;</span></p>
-<p class="p1"><span class="s1">    :root { --pink:#c9184a; }</span></p>
-<p class="p1"><span class="s1">    * { box-sizing: border-box; }</span></p>
-<p class="p1"><span class="s1"> </span></p>
-<p class="p1"><span class="s1">    body {</span></p>
-<p class="p1"><span class="s1">      margin: 0;</span></p>
-<p class="p1"><span class="s1">      min-height: 100vh;</span></p>
-<p class="p1"><span class="s1">      font-family: Georgia, serif;</span></p>
-<p class="p1"><span class="s1">      background: linear-gradient(135deg, #ff9a9e, #fad0c4);</span></p>
-<p class="p1"><span class="s1">      display: flex;</span></p>
-<p class="p1"><span class="s1">      align-items: center;</span></p>
-<p class="p1"><span class="s1">      justify-content: center;</span></p>
-<p class="p1"><span class="s1">      padding: 18px;</span></p>
-<p class="p1"><span class="s1">    }</span></p>
-<p class="p1"><span class="s1"> </span></p>
-<p class="p1"><span class="s1">    .card {</span></p>
-<p class="p1"><span class="s1">      width: 100%;</span></p>
-<p class="p1"><span class="s1">      max-width: 420px;</span></p>
-<p class="p1"><span class="s1">      background: rgba(255,255,255,0.96);</span></p>
-<p class="p1"><span class="s1">      border-radius: 26px;</span></p>
-<p class="p1"><span class="s1">      padding: 26px 20px;</span></p>
-<p class="p1"><span class="s1">      box-shadow: 0 18px 40px rgba(0,0,0,0.18);</span></p>
-<p class="p1"><span class="s1">      text-align: center;</span></p>
-<p class="p1"><span class="s1">      position: relative;</span></p>
-<p class="p1"><span class="s1">      animation: fadeIn 1s ease;</span></p>
-<p class="p1"><span class="s1">    }</span></p>
-<p class="p1"><span class="s1"> </span></p>
-<p class="p1"><span class="s1">    h1 {</span></p>
-<p class="p1"><span class="s1">      color: var(--pink);</span></p>
-<p class="p1"><span class="s1">      font-size: 30px;</span></p>
-<p class="p1"><span class="s1">      margin-bottom: 10px;</span></p>
-<p class="p1"><span class="s1">    }</span></p>
-<p class="p1"><span class="s1"> </span></p>
-<p class="p1"><span class="s1">    p {</span></p>
-<p class="p1"><span class="s1">      color: #555;</span></p>
-<p class="p1"><span class="s1">      line-height: 1.65;</span></p>
-<p class="p1"><span class="s1">      font-size: 16px;</span></p>
-<p class="p1"><span class="s1">    }</span></p>
-<p class="p1"><span class="s1"> </span></p>
-<p class="p1"><span class="s1">    .heart {</span></p>
-<p class="p1"><span class="s1">      width: 110px;</span></p>
-<p class="p1"><span class="s1">      height: 110px;</span></p>
-<p class="p1"><span class="s1">      margin: 15px auto;</span></p>
-<p class="p1"><span class="s1">      background: var(--pink);</span></p>
-<p class="p1"><span class="s1">      position: relative;</span></p>
-<p class="p1"><span class="s1">      transform: rotate(-45deg);</span></p>
-<p class="p1"><span class="s1">      animation: pulse 1.2s infinite;</span></p>
-<p class="p1"><span class="s1">      border-radius: 20px;</span></p>
-<p class="p1"><span class="s1">    }</span></p>
-<p class="p1"><span class="s1"> </span></p>
-<p class="p1"><span class="s1">    .heart::before,</span></p>
-<p class="p1"><span class="s1">    .heart::after {</span></p>
-<p class="p1"><span class="s1">      content: "";</span></p>
-<p class="p1"><span class="s1">      width: 110px;</span></p>
-<p class="p1"><span class="s1">      height: 110px;</span></p>
-<p class="p1"><span class="s1">      background: var(--pink);</span></p>
-<p class="p1"><span class="s1">      position: absolute;</span></p>
-<p class="p1"><span class="s1">      border-radius: 50%;</span></p>
-<p class="p1"><span class="s1">    }</span></p>
-<p class="p1"><span class="s1"> </span></p>
-<p class="p1"><span class="s1">    .heart::before { top: -55px; left: 0; }</span></p>
-<p class="p1"><span class="s1">    .heart::after { left: 55px; top: 0; }</span></p>
-<p class="p1"><span class="s1"> </span></p>
-<p class="p1"><span class="s1">    input {</span></p>
-<p class="p1"><span class="s1">      width: 110px;</span></p>
-<p class="p1"><span class="s1">      padding: 10px;</span></p>
-<p class="p1"><span class="s1">      font-size: 18px;</span></p>
-<p class="p1"><span class="s1">      border-radius: 14px;</span></p>
-<p class="p1"><span class="s1">      border: 1px solid #ffd1dc;</span></p>
-<p class="p1"><span class="s1">      text-align: center;</span></p>
-<p class="p1"><span class="s1">      margin: 10px 0;</span></p>
-<p class="p1"><span class="s1">    }</span></p>
-<p class="p1"><span class="s1"> </span></p>
-<p class="p1"><span class="s1">    button {</span></p>
-<p class="p1"><span class="s1">      border: none;</span></p>
-<p class="p1"><span class="s1">      border-radius: 999px;</span></p>
-<p class="p1"><span class="s1">      padding: 12px 18px;</span></p>
-<p class="p1"><span class="s1">      font-size: 16px;</span></p>
-<p class="p1"><span class="s1">      cursor: pointer;</span></p>
-<p class="p1"><span class="s1">      margin: 6px;</span></p>
-<p class="p1"><span class="s1">      transition: 0.2s;</span></p>
-<p class="p1"><span class="s1">      font-family: inherit;</span></p>
-<p class="p1"><span class="s1">    }</span></p>
-<p class="p1"><span class="s1"> </span></p>
-<p class="p1"><span class="s1">    .primary { background: var(--pink); color: white; }</span></p>
-<p class="p1"><span class="s1">    .ghost { background: #eee; }</span></p>
-<p class="p1"><span class="s1"> </span></p>
-<p class="p1"><span class="s1">    button:hover { transform: scale(1.05); }</span></p>
-<p class="p1"><span class="s1"> </span></p>
-<p class="p1"><span class="s1">    .hint {</span></p>
-<p class="p1"><span class="s1">      display: none;</span></p>
-<p class="p1"><span class="s1">      background: #fff3f6;</span></p>
-<p class="p1"><span class="s1">      border: 1px dashed #ffc2d1;</span></p>
-<p class="p1"><span class="s1">      border-radius: 16px;</span></p>
-<p class="p1"><span class="s1">      padding: 10px;</span></p>
-<p class="p1"><span class="s1">      margin-top: 10px;</span></p>
-<p class="p1"><span class="s1">      font-size: 14px;</span></p>
-<p class="p1"><span class="s1">    }</span></p>
-<p class="p1"><span class="s1"> </span></p>
-<p class="p1"><span class="s1">    .step { display: none; }</span></p>
-<p class="p1"><span class="s1">    .step.active { display: block; }</span></p>
-<p class="p1"><span class="s1"> </span></p>
-<p class="p1"><span class="s1">    .storyLine {</span></p>
-<p class="p1"><span class="s1">      background: #fff7f9;</span></p>
-<p class="p1"><span class="s1">      border: 1px solid #ffd1dc;</span></p>
-<p class="p1"><span class="s1">      border-radius: 18px;</span></p>
-<p class="p1"><span class="s1">      padding: 16px;</span></p>
-<p class="p1"><span class="s1">      margin: 12px 0;</span></p>
-<p class="p1"><span class="s1">      text-align: left;</span></p>
-<p class="p1"><span class="s1">      opacity: 0;</span></p>
-<p class="p1"><span class="s1">      transform: translateY(12px);</span></p>
-<p class="p1"><span class="s1">      animation: reveal 0.9s forwards;</span></p>
-<p class="p1"><span class="s1">    }</span></p>
-<p class="p1"><span class="s1"> </span></p>
-<p class="p1"><span class="s1">    #no {</span></p>
-<p class="p1"><span class="s1">      position: absolute;</span></p>
-<p class="p1"><span class="s1">      background: #ddd;</span></p>
-<p class="p1"><span class="s1">    }</span></p>
-<p class="p1"><span class="s1"> </span></p>
-<p class="p1"><span class="s1">    img {</span></p>
-<p class="p1"><span class="s1">      width: 100%;</span></p>
-<p class="p1"><span class="s1">      border-radius: 18px;</span></p>
-<p class="p1"><span class="s1">      box-shadow: 0 12px 22px rgba(0,0,0,0.18);</span></p>
-<p class="p1"><span class="s1">      margin-top: 12px;</span></p>
-<p class="p1"><span class="s1">    }</span></p>
-<p class="p1"><span class="s1"> </span></p>
-<p class="p1"><span class="s1">    @keyframes fadeIn {</span></p>
-<p class="p1"><span class="s1">      from { opacity: 0; transform: translateY(10px); }</span></p>
-<p class="p1"><span class="s1">      to { opacity: 1; transform: translateY(0); }</span></p>
-<p class="p1"><span class="s1">    }</span></p>
-<p class="p1"><span class="s1"> </span></p>
-<p class="p1"><span class="s1">    @keyframes reveal {</span></p>
-<p class="p1"><span class="s1">      to { opacity: 1; transform: translateY(0); }</span></p>
-<p class="p1"><span class="s1">    }</span></p>
-<p class="p1"><span class="s1"> </span></p>
-<p class="p1"><span class="s1">    @keyframes pulse {</span></p>
-<p class="p1"><span class="s1">      0%,100% { transform: rotate(-45deg) scale(1); }</span></p>
-<p class="p1"><span class="s1">      50% { transform: rotate(-45deg) scale(1.06); }</span></p>
-<p class="p1"><span class="s1">    }</span></p>
-<p class="p1"><span class="s1"> </span></p>
-<p class="p1"><span class="s1">    @keyframes shake {</span></p>
-<p class="p1"><span class="s1">      0%,100% { transform: translateX(0); }</span></p>
-<p class="p1"><span class="s1">      25% { transform: translateX(-8px); }</span></p>
-<p class="p1"><span class="s1">      50% { transform: translateX(8px); }</span></p>
-<p class="p1"><span class="s1">      75% { transform: translateX(-6px); }</span></p>
-<p class="p1"><span class="s1">    }</span></p>
-<p class="p1"><span class="s1">  &lt;/style&gt;</span></p>
-<p class="p1"><span class="s1">&lt;/head&gt;</span></p>
-<p class="p1"><span class="s1"> </span></p>
-<p class="p1"><span class="s1">&lt;body&gt;</span></p>
-<p class="p1"><span class="s1"> </span></p>
-<p class="p1"><span class="s1">&lt;div class="card"&gt;</span></p>
-<p class="p1"><span class="s1"> </span></p>
-<p class="p1"><span class="s1">  &lt;!-- STEP 1 --&gt;</span></p>
-<p class="p1"><span class="s1">  &lt;div class="step active" id="lock"&gt;</span></p>
-<p class="p1"><span class="s1">    &lt;h1&gt;Mariam </span><span class="s2">💕</span><span class="s1">&lt;/h1&gt;</span></p>
-<p class="p1"><span class="s1">    &lt;div class="heart"&gt;&lt;/div&gt;</span></p>
-<p class="p1"><span class="s1"> </span></p>
-<p class="p1"><span class="s1">    &lt;p&gt;Only you can unlock my heart </span><span class="s2">🔐</span><span class="s1">&lt;/p&gt;</span></p>
-<p class="p1"><span class="s1"> </span></p>
-<p class="p1"><span class="s1">    &lt;input id="pin" type="password" placeholder="•••" maxlength="3" /&gt;</span></p>
-<p class="p1"><span class="s1">    &lt;br&gt;</span></p>
-<p class="p1"><span class="s1">    &lt;button class="primary" onclick="unlock()"&gt;Unlock </span><span class="s2">💖</span><span class="s1">&lt;/button&gt;</span></p>
-<p class="p1"><span class="s1">    &lt;button class="ghost" onclick="showHint()"&gt;Need a hint?&lt;/button&gt;</span></p>
-<p class="p1"><span class="s1"> </span></p>
-<p class="p1"><span class="s1">    &lt;div class="hint" id="hint"&gt;</span></p>
-<p class="p1"><span class="s1">      The number of times I fall in love with you… every day </span><span class="s2">💘</span><span class="s1">&lt;br&gt;</span></p>
-<p class="p1"><span class="s1">      Try &lt;strong&gt;143&lt;/strong&gt;</span></p>
-<p class="p1"><span class="s1">    &lt;/div&gt;</span></p>
-<p class="p1"><span class="s1"> </span></p>
-<p class="p1"><span class="s1">    &lt;p style="font-size:13px;"&gt;— Abdelwahab&lt;/p&gt;</span></p>
-<p class="p1"><span class="s1">  &lt;/div&gt;</span></p>
-<p class="p1"><span class="s1"> </span></p>
-<p class="p1"><span class="s1">  &lt;!-- STEP 2 --&gt;</span></p>
-<p class="p1"><span class="s1">  &lt;div class="step" id="story"&gt;</span></p>
-<p class="p1"><span class="s1">    &lt;h1&gt;Our Story </span><span class="s2">💌</span><span class="s1">&lt;/h1&gt;</span></p>
-<p class="p1"><span class="s1">    &lt;div id="storyArea"&gt;&lt;/div&gt;</span></p>
-<p class="p1"><span class="s1">    &lt;button class="primary" onclick="revealNext()"&gt;Reveal the next memory </span><span class="s2">💕</span><span class="s1">&lt;/button&gt;</span></p>
-<p class="p1"><span class="s1">  &lt;/div&gt;</span></p>
-<p class="p1"><span class="s1"> </span></p>
-<p class="p1"><span class="s1">  &lt;!-- STEP 3 --&gt;</span></p>
-<p class="p1"><span class="s1">  &lt;div class="step" id="ask"&gt;</span></p>
-<p class="p1"><span class="s1">    &lt;h1&gt;Mariam </span><span class="s2">🌹</span><span class="s1">&lt;/h1&gt;</span></p>
-<p class="p1"><span class="s1">    &lt;p&gt;&lt;strong&gt;Will you be my Valentine?&lt;/strong&gt;&lt;/p&gt;</span></p>
-<p class="p1"><span class="s1">    &lt;button class="primary" onclick="yes()"&gt;Yes, my love </span><span class="s2">💖</span><span class="s1">&lt;/button&gt;</span></p>
-<p class="p1"><span class="s1">    &lt;button id="no" onmouseover="moveNo()"&gt;No </span><span class="s2">🙈</span><span class="s1">&lt;/button&gt;</span></p>
-<p class="p1"><span class="s1">  &lt;/div&gt;</span></p>
-<p class="p1"><span class="s1"> </span></p>
-<p class="p1"><span class="s1">&lt;/div&gt;</span></p>
-<p class="p1"><span class="s1"> </span></p>
-<p class="p1"><span class="s1">&lt;script&gt;</span></p>
-<p class="p1"><span class="s1">  const SECRET = "143";</span></p>
-<p class="p1"><span class="s1">  const storyLines = [</span></p>
-<p class="p1"><span class="s1">    "Our story began at work </span><span class="s2">💼💖</span><span class="s1">&lt;br&gt;but truly started when I traveled </span><span class="s2">✈️</span><span class="s1">&lt;br&gt;and our WhatsApp conversations erased the distance </span><span class="s2">💌</span><span class="s1">",</span></p>
-<p class="p1"><span class="s1"> </span></p>
-<p class="p1"><span class="s1">    "What I love most about you </span><span class="s2">☕💗</span><span class="s1">&lt;br&gt;is how simple moments become magical…&lt;br&gt;coffee from &lt;strong&gt;GENKO&lt;/strong&gt;, walking through &lt;strong&gt;Maadi&lt;/strong&gt;,&lt;br&gt;and feeling completely at peace with you </span><span class="s2">💕</span><span class="s1">",</span></p>
-<p class="p1"><span class="s1"> </span></p>
-<p class="p1"><span class="s1">    "And my favorite memory </span><span class="s2">🌹💖</span><span class="s1">&lt;br&gt;will always be our first date at &lt;strong&gt;Charl&lt;/strong&gt;…&lt;br&gt;the moment I knew this wasn’t just a date,&lt;br&gt;but the beginning of something real </span><span class="s2">💘</span><span class="s1">"</span></p>
-<p class="p1"><span class="s1">  ];</span></p>
-<p class="p1"><span class="s1"> </span></p>
-<p class="p1"><span class="s1">  let index = 0;</span></p>
-<p class="p1"><span class="s1"> </span></p>
-<p class="p1"><span class="s1">  function unlock() {</span></p>
-<p class="p1"><span class="s1">    const pin = document.getElementById("pin").value;</span></p>
-<p class="p1"><span class="s1">    const card = document.querySelector(".card");</span></p>
-<p class="p1"><span class="s1">    if (pin === SECRET) {</span></p>
-<p class="p1"><span class="s1">      show("story");</span></p>
-<p class="p1"><span class="s1">    } else {</span></p>
-<p class="p1"><span class="s1">      card.style.animation = "shake 0.4s";</span></p>
-<p class="p1"><span class="s1">      setTimeout(() =&gt; card.style.animation = "", 450);</span></p>
-<p class="p1"><span class="s1">    }</span></p>
-<p class="p1"><span class="s1">  }</span></p>
-<p class="p1"><span class="s1"> </span></p>
-<p class="p1"><span class="s1">  function showHint() {</span></p>
-<p class="p1"><span class="s1">    document.getElementById("hint").style.display = "block";</span></p>
-<p class="p1"><span class="s1">  }</span></p>
-<p class="p1"><span class="s1"> </span></p>
-<p class="p1"><span class="s1">  function revealNext() {</span></p>
-<p class="p1"><span class="s1">    if (index &lt; storyLines.length) {</span></p>
-<p class="p1"><span class="s1">      const div = document.createElement("div");</span></p>
-<p class="p1"><span class="s1">      div.className = "storyLine";</span></p>
-<p class="p1"><span class="s1">      div.innerHTML = storyLines[index];</span></p>
-<p class="p1"><span class="s1">      document.getElementById("storyArea").appendChild(div);</span></p>
-<p class="p1"><span class="s1">      index++;</span></p>
-<p class="p1"><span class="s1">      if (index === storyLines.length) {</span></p>
-<p class="p1"><span class="s1">        setTimeout(() =&gt; show("ask"), 1200);</span></p>
-<p class="p1"><span class="s1">      }</span></p>
-<p class="p1"><span class="s1">    }</span></p>
-<p class="p1"><span class="s1">  }</span></p>
-<p class="p1"><span class="s1"> </span></p>
-<p class="p1"><span class="s1">  function moveNo() {</span></p>
-<p class="p1"><span class="s1">    const no = document.getElementById("no");</span></p>
-<p class="p1"><span class="s1">    no.style.left = Math.random() * 200 + "px";</span></p>
-<p class="p1"><span class="s1">    no.style.top = Math.random() * 200 + "px";</span></p>
-<p class="p1"><span class="s1">  }</span></p>
-<p class="p1"><span class="s1"> </span></p>
-<p class="p1"><span class="s1">  function yes() {</span></p>
-<p class="p1"><span class="s1">    document.body.innerHTML = `</span></p>
-<p class="p1"><span class="s1">      &lt;div style="</span></p>
-<p class="p1"><span class="s1">        min-height:100vh;</span></p>
-<p class="p1"><span class="s1">        display:flex;</span></p>
-<p class="p1"><span class="s1">        align-items:center;</span></p>
-<p class="p1"><span class="s1">        justify-content:center;</span></p>
-<p class="p1"><span class="s1">        padding:20px;</span></p>
-<p class="p1"><span class="s1">        background: linear-gradient(135deg, #ff9a9e, #fad0c4);</span></p>
-<p class="p1"><span class="s1">        font-family:Georgia, serif;</span></p>
-<p class="p1"><span class="s1">        text-align:center;</span></p>
-<p class="p1"><span class="s1">      "&gt;</span></p>
-<p class="p1"><span class="s1">        &lt;div style="</span></p>
-<p class="p1"><span class="s1">          background:white;</span></p>
-<p class="p1"><span class="s1">          padding:24px;</span></p>
-<p class="p1"><span class="s1">          border-radius:26px;</span></p>
-<p class="p1"><span class="s1">          max-width:420px;</span></p>
-<p class="p1"><span class="s1">          box-shadow:0 18px 40px rgba(0,0,0,0.18);</span></p>
-<p class="p1"><span class="s1">        "&gt;</span></p>
-<p class="p1"><span class="s1">          &lt;h1 style="color:#c9184a;"&gt;She said YES </span><span class="s2">💖</span><span class="s1">&lt;/h1&gt;</span></p>
-<p class="p1"><span class="s1">          &lt;p&gt;</span></p>
-<p class="p1"><span class="s1">            Mariam… you just made my world softer.&lt;br&gt;&lt;br&gt;</span></p>
-<p class="p1"><span class="s1">            Happy Valentine’s Day </span><span class="s2">🌹</span><span class="s1">&lt;br&gt;</span></p>
-<p class="p1"><span class="s1">            &lt;strong&gt;— Abdelwahab&lt;/strong&gt;</span></p>
-<p class="p1"><span class="s1">          &lt;/p&gt;</span></p>
-<p class="p1"><span class="s1">          &lt;img src="us.jpg"&gt;</span></p>
-<p class="p1"><span class="s1">        &lt;/div&gt;</span></p>
-<p class="p1"><span class="s1">      &lt;/div&gt;</span></p>
-<p class="p1"><span class="s1">    `;</span></p>
-<p class="p1"><span class="s1">  }</span></p>
-<p class="p1"><span class="s1"> </span></p>
-<p class="p1"><span class="s1">  function show(id) {</span></p>
-<p class="p1"><span class="s1">    document.querySelectorAll(".step").forEach(s =&gt; s.classList.remove("active"));</span></p>
-<p class="p1"><span class="s1">    document.getElementById(id).classList.add("active");</span></p>
-<p class="p1"><span class="s1">  }</span></p>
-<p class="p1"><span class="s1">&lt;/script&gt;</span></p>
-<p class="p1"><span class="s1"> </span></p>
-<p class="p1"><span class="s1">&lt;/body&gt;</span></p>
-<p class="p1"><span class="s1">&lt;/html&gt;</span></p>
+  <div class="card">
+    <div class="step active" id="lock">
+      <h1>Mariam 💕</h1>
+      <div class="heart"></div>
+      <p>Only you can unlock my heart 🔐</p>
+      <input id="pin" type="password" inputmode="numeric" placeholder="•••" maxlength="3" />
+      <br/>
+      <button class="primary" onclick="unlock()">Unlock 💖</button>
+      <button class="ghost" onclick="showHint()">Need a hint?</button>
+      <div class="hint" id="hint">
+        The number of times I fall in love with you… every day 💘<br/>
+        Try <strong>143</strong>
+      </div>
+      <p style="font-size:13px;">— Abdelwahab</p>
+    </div>
+
+    <div class="step" id="story">
+      <h1>Our Story 💌</h1>
+      <div id="storyArea"></div>
+      <button class="primary" onclick="revealNext()">Reveal the next memory 💕</button>
+    </div>
+
+    <div class="step" id="ask">
+      <h1>Mariam 🌹</h1>
+      <p><strong>Will you be my Valentine?</strong></p>
+      <button class="primary" onclick="yes()">Yes, my love 💖</button>
+      <button id="no" onmouseover="moveNo()">No 🙈</button>
+    </div>
+  </div>
+
+  <script>
+    const SECRET = "143";
+    const storyLines = [
+      "Our story began at work 💼💖<br>but truly started when I traveled ✈️<br>and our WhatsApp conversations erased the distance 💌",
+      "What I love most about you ☕💗<br>is how simple moments become magical…<br>coffee from <strong>GENKO</strong>, walking through <strong>Maadi</strong>,<br>and feeling completely at peace with you 💕",
+      "And my favorite memory 🌹💖<br>will always be our first date at <strong>Charl</strong>…<br>the moment I knew this wasn’t just a date,<br>but the beginning of something real 💘"
+    ];
+    let index = 0;
+
+    function show(id){
+      document.querySelectorAll(".step").forEach(s => s.classList.remove("active"));
+      document.getElementById(id).classList.add("active");
+    }
+    function unlock(){
+      const pin = document.getElementById("pin").value.trim();
+      const card = document.querySelector(".card");
+      if(pin === SECRET) show("story");
+      else { card.style.animation="shake 0.4s"; setTimeout(()=>card.style.animation="",450); }
+    }
+    function showHint(){ document.getElementById("hint").style.display="block"; }
+    function revealNext(){
+      if(index < storyLines.length){
+        const div = document.createElement("div");
+        div.className="storyLine";
+        div.innerHTML=storyLines[index];
+        document.getElementById("storyArea").appendChild(div);
+        index++;
+        if(index === storyLines.length) setTimeout(()=>show("ask"), 1200);
+      }
+    }
+    function moveNo(){
+      const no = document.getElementById("no");
+      const maxX = Math.max(10, window.innerWidth - (no.offsetWidth + 30));
+      const maxY = Math.max(10, window.innerHeight - (no.offsetHeight + 30));
+      no.style.left = (Math.random() * maxX) + "px";
+      no.style.top  = (Math.random() * maxY) + "px";
+    }
+    function yes(){
+      document.body.innerHTML = `
+        <div style="min-height:100vh;display:flex;align-items:center;justify-content:center;padding:20px;
+          background: linear-gradient(135deg,#ff9a9e,#fad0c4);font-family:Georgia,serif;text-align:center;">
+          <div style="background:white;padding:24px;border-radius:26px;max-width:420px;
+            box-shadow:0 18px 40px rgba(0,0,0,0.18);width:100%;">
+            <h1 style="color:#c9184a;margin:0 0 8px;">She said YES 💖</h1>
+            <p style="color:#555;line-height:1.65;margin:10px 0 14px;">
+              Mariam… you just made my world softer 💕<br><br>
+              Happy Valentine’s Day 🌹<br><strong>— Abdelwahab</strong>
+            </p>
+            <img src="us.jpg" alt="Our photo">
+          </div>
+        </div>`;
+    }
+  </script>
 </body>
 </html>
